@@ -1,0 +1,30 @@
+# ---- 编译中间产物 ----
+obj/
+*.obj
+*.pdb
+*.ilk
+*.exp
+vc140.pdb
+
+# ---- 可执行文件 ----
+# bin/ 下 release 那份是刻意留在仓库里的（下载即玩，见 README），
+# debug 那份只是排障用的，不进仓库。
+bin/*_d.exe
+
+# ---- 玩家存档 ----
+# 记录.dat / 历史.dat / 参数.dat 是每个人自己的成绩与设置，不该跟着源码走。
+bin/*.dat
+bin/*.cfg
+
+# ---- 自检与出图的临时产物 ----
+bin/selftest_report.txt
+
+# ---- 编辑器 / IDE ----
+.vs/
+*.user
+*.suo
+
+# ---- 系统生成 ----
+Thumbs.db
+Desktop.ini
+.DS_Store
